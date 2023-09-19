@@ -1,11 +1,11 @@
 # SOLID-Principles
 SOLID principles are the design principles that enable us to manage several software design problems. Robert C. Martin compiled these principles in the 1990s. These principles provide us with ways to move from tightly coupled code and little encapsulation to the desired results of loosely coupled and encapsulated real business needs properly. SOLID is an acronym for the following.
 
-S: Single Responsibility Principle (SRP)
-O: Open-closed Principle (OCP)
-L: Liskov substitution Principle (LSP)
-I: Interface Segregation Principle (ISP)
-D: Dependency Inversion Principle (DIP)
+- S: Single Responsibility Principle (SRP)
+- O: Open-closed Principle (OCP)
+- L: Liskov substitution Principle (LSP)
+- I: Interface Segregation Principle (ISP)
+- D: Dependency Inversion Principle (DIP)
 
 # Single Responsibility Principle (SRP)
 SRP says, "Every software module should have only one reason to change."
