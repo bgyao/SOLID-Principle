@@ -17,6 +17,8 @@ public class Program
         Console.WriteLine("After Transactions:");
         PrintAccountDetails(savingsAccount);
         PrintAccountDetails(currentAccount);
+
+        Console.ReadKey();
     }
 
     static void PrintAccountDetails(BankAccount bankAccount)
