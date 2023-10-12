@@ -1,27 +1,5 @@
 ﻿namespace Solid_Principles.SingleResponsibilityPrinciples.DescriptiveCatalogings;
 
-public class BookDetails
-{
-    public Guid id = new Guid();
-    public string bookTitle;
-    public string? bookSubtitle;
-    public string? edition;
-
-    public void PrintBookBasicDetails()
-    {
-        var displayDetails = $"This book is titled {bookTitle}";
-
-        if (!string.IsNullOrEmpty(bookSubtitle))
-        {
-            displayDetails = string.Join(" : ", displayDetails, bookSubtitle);
-        }
-
-        displayDetails = string.Join(", ", displayDetails, edition);
-        Console.WriteLine(displayDetails);
-    }
- 
-}
-
 public class Author
 {
     public Guid AuthorId = new Guid();
@@ -34,6 +12,8 @@ public class Author
 
     public void AuthorNotice()
     {
+        Console.WriteLine("MARC CODE:");
+        Console.WriteLine($"100 {entryType}# $a{FullNameInverse}, author.");
         Console.WriteLine("This class is responsible for processing the resource's Statement of Responsibility Personal Name.");
     }
 }
